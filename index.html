@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Ruthvik</title>
+    <meta name="description" content="Personal portfolio of {{FULL_NAME}} — {{CURRENT_ROLE}}." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#hero" aria-label="Go to top">
+                <svg class="logo" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="1" y="1" width="22" height="22" rx="3" ry="3" fill="none" stroke="currentColor"
+                        stroke-width="1.2" />
+                    <path d="M6 17 L10 7 L14 17 L18 7" fill="none" stroke="currentColor" stroke-width="1.4"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="brand-name">{{FULL_NAME}}</span>
+            </a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" role="navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1 class="mono title">{{FULL_NAME}}</h1>
+                    <p class="muted role">{{CURRENT_ROLE}} • {{LOCATION}}</p>
+                    <p class="tagline">> {{SHORT_TAGLINE}}</p>
+
+                    <div class="cta-row">
+                        <a class="btn-outline" href="#projects">View Projects</a>
+                        <a class="btn-neon" href="{{GITHUB_URL}}" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+
+                    <div class="terminal">
+                        <div class="term-line">~$ echo "Hi, I'm {{FULL_NAME}} — {{CURRENT_ROLE}}."</div>
+                        <div class="term-line">~$ cat resume.pdf (email: <a
+                                href="mailto:{{EMAIL_ADDRESS}}">{{EMAIL_ADDRESS}}</a>)</div>
+                    </div>
+                </div>
+
+                <aside class="hero-side">
+                    <div class="card profile-card">
+                        <div class="avatar" aria-hidden="true">
+                            <!-- simple SVG avatar -->
+                            <svg viewBox="0 0 120 120">
+                                <rect width="120" height="120" rx="10" fill="transparent" />
+                                <circle cx="60" cy="40" r="22" />
+                                <rect x="30" y="70" width="60" height="30" rx="6" />
+                            </svg>
+                        </div>
+                        <div class="profile-meta">
+                            <h3 class="mono small-name">{{FULL_NAME}}</h3>
+                            <p class="muted tiny">{{DEGREE_MAJOR}} — {{UNIVERSITY_NAME}} ({{GRAD_YEAR}})</p>
+                            <div class="links-inline">
+                                <a href="{{GITHUB_URL}}" target="_blank" rel="noopener">GitHub</a>
+                                <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card skill-snapshot">
+                        <h4 class="mono sm">Core</h4>
+                        <ul>
+                            <li>{{CORE_CONCEPTS}}</li>
+                        </ul>
+                        <h4 class="mono sm">Languages</h4>
+                        <ul>
+                            <li>{{PROGRAMMING_LANGUAGES}}</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title mono">About</h2>
+                <div class="about-grid">
+                    <div>
+                        <p>
+                            I'm <strong>{{FULL_NAME}}</strong>, a <em>{{CURRENT_ROLE}}</em> based in
+                            <strong>{{LOCATION}}</strong>.
+                            I build performant, maintainable software and enjoy system-level problems, scalable design,
+                            and clean user interfaces in terminal-forward aesthetics.
+                        </p>
+                        <p>
+                            Interests: {{HOBBIES}}. Soft skills include {{SOFT_SKILLS}}.
+                        </p>
+                    </div>
+
+                    <div class="tools-list card">
+                        <h4 class="mono sm">Tools & Platforms</h4>
+                        <p>{{FRAMEWORKS_TOOLS}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title mono">Skills</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="mono">Languages</h3>
+                        <p>{{PROGRAMMING_LANGUAGES}}</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="mono">Frameworks & Tools</h3>
+                        <p>{{FRAMEWORKS_TOOLS}}</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="mono">Core Concepts</h3>
+                        <p>{{CORE_CONCEPTS}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title mono">Highlighted Projects</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3 class="mono project-title">{{PROJECT_1_NAME}}</h3>
+                        <p class="muted project-desc">{{PROJECT_1_DESC}}</p>
+                        <div class="project-meta">
+                            <span class="tag">Full-stack</span>
+                            <a class="small-link" href="{{GITHUB_URL}}" target="_blank" rel="noopener">View code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="mono project-title">{{PROJECT_2_NAME}}</h3>
+                        <p class="muted project-desc">{{PROJECT_2_DESC}}</p>
+                        <div class="project-meta">
+                            <span class="tag">Systems</span>
+                            <a class="small-link" href="{{GITHUB_URL}}" target="_blank" rel="noopener">View code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="mono project-title">{{PROJECT_3_NAME}}</h3>
+                        <p class="muted project-desc">{{PROJECT_3_DESC}}</p>
+                        <div class="project-meta">
+                            <span class="tag">Research</span>
+                            <a class="small-link" href="{{GITHUB_URL}}" target="_blank" rel="noopener">View code</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section education">
+            <div class="container">
+                <h2 class="section-title mono">Education</h2>
+                <div class="education-row card">
+                    <div>
+                        <h3 class="mono">{{UNIVERSITY_NAME}}</h3>
+                        <p class="muted">{{DEGREE_MAJOR}} — Class of {{GRAD_YEAR}}</p>
+                    </div>
+                    <div class="edu-notes">
+                        <p>Relevant coursework: Data Structures, Algorithms, Operating Systems, Networks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title mono">Get in touch</h2>
+
+                <div class="contact-grid card">
+                    <div>
+                        <p>I'm open to internships, collaborations, and interesting problems. Reach out:</p>
+                        <ul class="contact-list">
+                            <li><strong>Email:</strong> <a href="mailto:{{EMAIL_ADDRESS}}">{{EMAIL_ADDRESS}}</a></li>
+                            <li><strong>GitHub:</strong> <a href="{{GITHUB_URL}}" target="_blank"
+                                    rel="noopener">{{GITHUB_URL}}</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="{{LINKEDIN_URL}}" target="_blank"
+                                    rel="noopener">{{LINKEDIN_URL}}</a></li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" action="mailto:{{EMAIL_ADDRESS}}" method="post" enctype="text/plain"
+                        aria-label="Contact form">
+                        <label for="name" class="sr-only">Name</label>
+                        <input id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input id="email" name="email" placeholder="Your email" type="email" required>
+
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Short message" required></textarea>
+
+                        <div class="form-row">
+                            <button class="btn-neon" type="submit">Send</button>
+                            <button class="btn-outline" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="muted">© <span id="year"></span> {{FULL_NAME}} — Built with HTML & CSS.</p>
+            <div class="footer-links">
+                <a href="{{GITHUB_URL}}" target="_blank" rel="noopener">GitHub</a>
+                <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile nav toggle ---
+        (function () {
+            const btn = document.querySelector('.nav-toggle');
+            const nav = document.getElementById('primary-nav');
+            const yearSpan = document.getElementById('year');
+            if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+                nav.classList.toggle('open');
+            });
+
+            // close nav on link click (mobile)
+            Array.from(nav.querySelectorAll('a')).forEach(a => a.addEventListener('click', () => {
+                nav.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+            }));
+
+            // smooth scroll for in-page links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

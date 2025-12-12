@@ -16,20 +16,20 @@ You are an expert Senior Frontend Engineer and UI/UX Designer. Your task is to b
 Please populate the site with the following details. If a field is empty, use a professional placeholder.
 
 **Personal Details:**
-- Full Name: {{FULL_NAME}}
-- Role/Title: {{CURRENT_ROLE}} (e.g., "Systems Engineer")
-- Tagline: {{SHORT_TAGLINE}}
-- Location: {{LOCATION}}
+- Full Name: Ruthvik
+- Role/Title: Student (e.g., "Systems Engineer")
+- Tagline: NTH
+- Location: HYD
 
 **Education:**
-- University: {{UNIVERSITY_NAME}}
-- Degree: {{DEGREE_MAJOR}}
-- Grad Year: {{GRAD_YEAR}}
+- University: VIT-AP
+- Degree: CS
+- Grad Year: 2029
 
 **Technical Skills:**
-- Languages: {{PROGRAMMING_LANGUAGES}}
-- Tools/Platforms: {{FRAMEWORKS_TOOLS}}
-- Core Concepts: {{CORE_CONCEPTS}}
+- Languages: Python , Java
+- Tools/Platforms: 
+- Core Concepts: 
 
 **Projects (Highlight 2-3):**
 1. {{PROJECT_1_NAME}}: {{PROJECT_1_DESC}}
@@ -37,11 +37,11 @@ Please populate the site with the following details. If a field is empty, use a 
 3. {{PROJECT_3_NAME}}: {{PROJECT_3_DESC}}
 
 **Interests:**
-- Hobbies: {{HOBBIES}}
-- Soft Skills: {{SOFT_SKILLS}}
+- Hobbies: Sleep
+- Soft Skills: Critical thinking
 
 **Links:**
-- GitHub: {{GITHUB_URL}}
+- GitHub: 
 - LinkedIn: {{LINKEDIN_URL}}
 - Email: {{EMAIL_ADDRESS}}
 
