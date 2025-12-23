@@ -1,144 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Ruthvik M Rao</title>
-    <meta name="description" content="Personal portfolio of Ruthvik M Rao — Computer Science Student." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruthvik Manikya Rao | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="#hero">
-                <span class="brand-name">Ruthvik M Rao</span>
-            </a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo mono">RMRV</div>
 
-            <button class="nav-toggle" aria-expanded="false">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </button>
-
-            <nav class="primary-nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <nav class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
             </nav>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="hero">
+        <!-- HERO -->
+        <section class="hero">
             <div class="container hero-grid">
-                <div>
-                    <h1 class="mono title">Ruthvik M Rao</h1>
-                    <p class="muted">Computer Science Student • India</p>
-                    <p class="tagline">&gt; Building real systems with AI, logic, and intent</p>
+                <div class="hero-text">
+                    <h1 class="mono">Ruthvik Manikya Rao Voodepu</h1>
+                    <p class="subtitle">Student • Hyderabad</p>
+                    <p class="tagline">&gt; Curious learner building systems step by step</p>
 
-                    <div class="cta-row">
-                        <a class="btn-outline" href="#projects">View Projects</a>
-                        <a class="btn-neon" href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-outline">View Projects</a>
+                        <a href="https://github.com/ImplosionA12" target="_blank" class="btn-primary">GitHub</a>
                     </div>
 
                     <div class="terminal">
-                        <div>~$ python build_future.py</div>
-                        <div>~$ status: learning • building • shipping</div>
+                        <p>~$ echo "Hello, I'm Ruthvik — CS Student"</p>
+                        <p>~$ learning = true</p>
                     </div>
                 </div>
 
-                <aside class="card">
-                    <h3 class="mono">Quick Info</h3>
-                    <p class="muted">Integrated M.Tech CSE</p>
-                    <p class="muted">VIT-AP University — 2028</p>
-                </aside>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="mono section-title">About</h2>
-                <p>
-                    I’m Ruthvik, a Computer Science student focused on building practical systems.
-                    I use AI as a tool — not a crutch — to design, prototype, and ship projects efficiently.
-                </p>
-                <p>
-                    Interests include system design, AI-assisted development, problem solving,
-                    and competitive security challenges (CTFs).
-                </p>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="mono section-title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="card">Languages: Python, Java, C, SQL, JavaScript</div>
-                    <div class="card">Tools: Git, GitHub, Linux, IntelliJ, VS Code</div>
-                    <div class="card">Concepts: DSA, OS, DBMS, CN</div>
+                <div class="profile-card">
+                    <div class="avatar"></div>
+                    <h3 class="mono">Ruthvik Manikya Rao</h3>
+                    <p>Integrated M.Tech CSE</p>
+                    <p>VIT-AP University (2029)</p>
+                    <div class="profile-links">
+                        <a href="https://github.com/ImplosionA12" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/ruthvik-manikya-rao-a71346361" target="_blank">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="mono section-title">About Me</h2>
+                <p>
+                    I am a Computer Science student pursuing an Integrated M.Tech in CSE at VIT-AP University.
+                    I enjoy understanding how systems work internally and building beginner-friendly projects
+                    that strengthen my fundamentals.
+                </p>
+                <p>
+                    Outside academics, I enjoy gaming, playing chess, and cooking. I value consistency,
+                    curiosity, and steady improvement.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="mono section-title">Skills</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="mono">Languages</h3>
+                        <p>Python, Java</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="mono">Tools & Platforms</h3>
+                        <p>Git, GitHub, VS Code, IntelliJ IDEA, Linux (Basics)</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="mono">Core Concepts</h3>
+                        <p>Data Structures, OOP, DBMS Basics, Problem Solving</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
         <section id="projects" class="section">
             <div class="container">
                 <h2 class="mono section-title">Projects</h2>
 
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3 class="mono">AI-Assisted Web Projects</h3>
-                        <p>Multiple frontend and backend web projects created using AI tools under my own system design
-                            and logic.</p>
+                        <h3 class="mono">E-Fashion Store</h3>
+                        <p>Basic e-commerce style project focusing on product listing, UI flow, and logic handling.</p>
                     </div>
 
                     <div class="project-card">
-                        <h3 class="mono">Telegram Manga Bot</h3>
-                        <p>Python bot fetching manga data via APIs with search, updates, and downloads.</p>
+                        <h3 class="mono">College Management System</h3>
+                        <p>System designed to manage student records, courses, and administrative data.</p>
                     </div>
 
                     <div class="project-card">
-                        <h3 class="mono">Raspberry Pi Semester Project</h3>
-                        <p>Hardware + Python based system built for academic evaluation.</p>
+                        <h3 class="mono">Employee Payroll System</h3>
+                        <p>Application to calculate salaries, manage employee data, and generate payroll reports.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- EDUCATION -->
         <section id="education" class="section">
             <div class="container">
                 <h2 class="mono section-title">Education</h2>
-                <div class="card">
+                <div class="edu-card">
                     <h3>VIT-AP University</h3>
-                    <p class="muted">Integrated M.Tech – Computer Science & Engineering (2028)</p>
+                    <p>Integrated M.Tech – Computer Science & Engineering</p>
+                    <p>Graduation Year: 2029</p>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT -->
         <section id="contact" class="section">
             <div class="container">
                 <h2 class="mono section-title">Contact</h2>
-                <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-                <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/yourusername"
-                        target="_blank">linkedin.com/in/yourusername</a></p>
+
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:mr.ruthvik@gmail.com">mr.ruthvik@gmail.com</a></li>
+                    <li>GitHub: <a href="https://github.com/ImplosionA12" target="_blank">ImplosionA12</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/ruthvik-manikya-rao-a71346361"
+                            target="_blank">Profile</a></li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p class="muted">© 2025 Ruthvik M Rao</p>
-        </div>
+    <footer class="footer">
+        <p>© 2025 Ruthvik Manikya Rao Voodepu</p>
     </footer>
 
     <script>
-        const btn = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('.primary-nav');
-        btn.onclick = () => nav.classList.toggle('open');
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
     </script>
 </body>
 
